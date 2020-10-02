@@ -30,6 +30,11 @@ code {
 h1{
   color: aqua;
 }
+
+h2{
+  color: chartreuse;
+}
+
 html {
   font-family: 'Federant', cursive;
 }
