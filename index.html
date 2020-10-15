@@ -4,12 +4,13 @@
     <link href="https://fonts.googleapis.com/css2?family=Federant&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/outlines.css"/>
     <meta charset="UTF-8">
-    <title>M3306 Ельников Сергей</title>
+    <title>M3306 Ельников Сергей ебашу юмл</title>
 </head>
 
 <body>
-<header>
-    <nav class="bar">
+<div class="container">
+<header class="header">
+    <nav class="header__nav">
         <a href="#about">About Me</a>
         <a href="#skills">Skills</a>
         <a href="#portfolio">Portfolio</a>
@@ -18,20 +19,31 @@
 </header>
 
 <main>
-    <section id="about">
-        <h1>About</h1>
-        <h2>Elnikov Sergei</h2>
-        <h3>Software Engineer | Student</h3>
-        <p>
-            I am 3rd year bachelor ITMO student.<br>
-            Born: <time datetime="06.10.1998">06 october 1998</time>
-        </p>
-        <q>
-            Per aspera ad astra
-        </q>
-        <sub>Einstein</sub>
+    
+    <section id="overview">
+        <div class="about">
+            <div class="about__heading">Elnikov<br> Sergei</div>
+            <div>
+                <h3>Software Engineer | Student</h3>
+                <p>
+                    I am 3rd year bachelor ITMO student.<br>
+                    Born: <time datetime="06.10.1998">06 october 1998</time>
+                </p>
+                <q>
+                    Per aspera ad astra
+                </q>
+                <sub>Einstein</sub>
+            </div>
+            <div class="about__lang">RU | ENG</div>
+        </div>
+        <div class="about__image">
+            <img class="about__image_content" src="IMG_4265.jpg" alt="My photograph">
+        </div>
+        
     </section>
-
+    <section  id="about" class="back_grey">
+        <div>Bla bla bla</div>
+    </section>
     <section id="skills">
         <h1>Skills</h1>
         <ul>
@@ -87,5 +99,8 @@
         <a href="https://vk.com/plsnotagain">VK</a>
     </div>
 </footer>
+
+</div>
+
 </body>
 </html>
