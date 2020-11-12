@@ -2,7 +2,18 @@
   font-family: Jb-Mono;
   src: url(../fonts/JetBrainsMono-Regular.ttf);
 }
-
+html {
+  font-family: 'Federant', cursive;
+}
+h1{
+  font-size: 48px;
+}
+h2{
+  font-size: 40px;
+}
+p{
+  font-size: 23px;
+}
 body{
   padding: 0;
   margin: 0;
@@ -18,6 +29,48 @@ body a{
   width: 67%;
 }
 
+.gray_container{
+  width: 100%;
+  background-color: #F6F6F6;
+}
+
+.gray_section{
+  width: 67%;
+  margin: auto;
+}
+
+.about2{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.skiils{
+  height: 400px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.skill_logo_square{
+  margin-left: auto;
+  margin-right: auto; 
+  width: 100px;
+  height: 100px;
+}
+.skill_logo_figma{
+  justify-self: center;
+  width: 140px;
+
+}
+.skill_name{
+  text-align: center;
+}
+.section{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
 .header::after{
   content:"";
   display:block;
@@ -25,9 +78,17 @@ body a{
   border-bottom:5px solid #828282;
 
 }
+.portfolio_text{
+  text-align:center;
+}
+.portfolio_text__underline{
+  text-align:center;
+  text-decoration: underline;
+}
 .back_grey{
   background-color: #F6F6F6;
 }
+
 .header__nav{
   padding: 15px 0 15px 0;
   display: flex;
@@ -38,34 +99,72 @@ body a{
   width:100vm;
   height: 5vh;
 }
+
 .about{
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
+
 code {
   font-family: Jb-Mono, serif;
 }
+
 .about__heading{
   font-size: 70px;
 }
+
 .about__lang{
   transform: rotate(270deg);
 }
+
 .about__image_content{
  width: 100%;
 }
+
 .about__image{
   padding: 5vh 0 10vh 0;
 }
-h2{
-  color: chartreuse;
+.code_block{
+  background-color: white;
+  border-radius: 5px;
+  padding: 1.5rem;
 }
 
 #goose {
   color: magenta;
 }
+#nolan{
+  height: 200px;
+}
+footer{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 60px;
+}
+.footer__button{
 
-html {
-  font-family: 'Federant', cursive;
+  background: #070707;
+  border-radius: 25px;
+  color:white;
+  padding: 10px 30px 10px 30px;
+  margin: 15px;
+
+}
+.footer_link__image{
+  width: 70px;
+}
+.footet_links{
+  margin: 20px;
+  width: 70%;
+  display: flex;
+  justify-content: space-around;
+}
+.footer_link{
+  margin: auto;
+}
+.post{
+  margin: 0;
 }

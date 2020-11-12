@@ -17,90 +17,139 @@
         <a href="#contacts">Contacts</a>
     </nav>
 </header>
-
+</div>
 <main>
-    
-    <section id="overview">
-        <div class="about">
-            <div class="about__heading">Elnikov<br> Sergei</div>
-            <div>
-                <h3>Software Engineer | Student</h3>
-                <p>
-                    I am 3rd year bachelor ITMO student.<br>
-                    Born: <time datetime="06.10.1998">06 october 1998</time>
-                </p>
-                <q>
-                    Per aspera ad astra
-                </q>
-                <sub>Einstein</sub>
+    <div class="container">
+        <div>
+            <section id="overview">
+            <div class="about">
+                <div class="about__heading">Elnikov<br> Sergei</div>
+                <div>
+                    <h3>Software Engineer | Student</h3>
+                    <p>
+                        I am 3rd year bachelor ITMO student.<br>
+                        Born: <time datetime="06.10.1998">06 october 1998</time>
+                    </p>
+                    <q>
+                        Per aspera ad astra
+                    </q>
+                    <sub>Einstein</sub>
+                </div>
+                <div class="about__lang">RU | ENG</div>
             </div>
-            <div class="about__lang">RU | ENG</div>
+            <div class="about__image">
+                <img class="about__image_content" src="IMG_4265.png" alt="My photograph">
+            </div>
+        </section>
+    </div>
+    </div>
+    <div class="gray_container">
+        <div> 
+            <section id="about" class="gray_section about2">
+                <h1>About me</h1>
+                <h3>Hi, I'm Sergei –  software developer from Saint-Petersburg.</h3>
+                <h3>3rd year bachelor at ITMO university.</h3>
+                <h3>Ready to implement excellent projects</h3>
+                <h3>with wonderful people.</h3>
+
+            </section>
         </div>
-        <div class="about__image">
-            <img class="about__image_content" src="IMG_4265.png" alt="My photograph">
+    </div>
+    <div class="container">
+         <section class="skiils">
+             <div class="section">
+                 <img src="images/c.svg" class="skill_logo_square">
+                <p  class="skill_name">C++</p>
+             </div>
+             <div class="section">
+                 <img src="images/figma.png" class="skill_logo_figma">
+                <p class="skill_name">Figma</p>
+            </div>
+            <div class="section">
+                <img src="images/vp.png" class="skill_logo_square">
+                <p class="skill_name">Visual Paradighm</p>  
+            </div>
+            <div class="section">
+                <img src="images/PyTorch.png" class="skill_logo_figma">
+                <p class="skill_name">PyTorch</p>
+            </div>
+         </section>
+    </div>
+    <div class="gray_container">
+        <div>
+            <section id="portfolio" class="gray_section">
+                <h1 class="portfolio_text">Portfolio</h1>
+                <h2 class="portfolio_text__underline">My best code:</h2>
+                <div class="code_block">
+                    <code>
+                        int main() {<br>
+                        std::cout << "Hello world";<br>
+                        return 1;<br>
+                        }
+                    </code>
+                </div>
+                <p class="portfolio_text">In case you are wondering: “what is so special about this code?” - it is wtritten with Kotlin.</p>
+                <h2>Work experience:</h2>
+                <p>
+                    4 months as C++ L1 SW at Nokia Solutions and Networks
+                </p>
+            </section>
         </div>
-        
-    </section>
-    <section  id="about" class="back_grey">
-        <div>Bla bla bla</div>
-    </section>
-    <section id="skills">
-        <h1>Skills</h1>
-        <ul>
-            <li>html</li>
-            <li>js</li>
-            <li>css</li>
-            <li>haskell</li>
-        </ul>
-    </section>
+    </div>
+    <div class="container">
+        <div>
+            <h1>Just in case</h1>
+            <pre id="goose">
+                ░░░░░▄▀▀▀▄░░░░░░░░
+                ▄███▀░◐░░░▌░░░░░░░
+                ░░░░▌░░░░░▐░░░░░░░
+                ░░░░▐░░░░░▐░░░░░░░
+                ░░░░▌░░░░░▐▄▄░░░░░
+                ░░░░▌░░░░▄▀▒▒▀▀▀▀▄
+                ░░░▐░░░░▐▒▒▒▒▒▒▒▒▀▀▄
+                ░░░▐░░░░▐▄▒▒▒▒▒▒▒▒▒▒▀▄
+                ░░░░▀▄░░░░▀▄▒▒▒▒▒▒▒▒▒▒▀▄
+                ░░░░░░▀▄▄▄▄▄█▄▄▄▄▄▄▄▄▄▄▄▀▄
+                ░░░░░░░░░░░▌▌▌▌░░░░░
+                ░░░░░░░░░░░▌▌░▌▌░░░░░
+                ░░░░░░░░░▄▄▌▌▄▌▌░░░░░
+            </pre>
 
-    <section id="portfolio">
-        <h1>Portfolio</h1>
-        <h2>My best code:</h2>
-        <code>
-            int main() {<br>
-            std::cout << "Hello world";<br>
-            return 1;<br>
-            }
-        </code>
-
-        <h2>Work experience:</h2>
-        <p>
-            4 months as C++ L1 SW at Nokia Solutions and Networks
-        </p>
-    </section>
-
-    <h1>Just in case</h1>
-    <pre id="goose">
-        ░░░░░▄▀▀▀▄░░░░░░░░
-        ▄███▀░◐░░░▌░░░░░░░
-        ░░░░▌░░░░░▐░░░░░░░
-        ░░░░▐░░░░░▐░░░░░░░
-        ░░░░▌░░░░░▐▄▄░░░░░
-        ░░░░▌░░░░▄▀▒▒▀▀▀▀▄
-        ░░░▐░░░░▐▒▒▒▒▒▒▒▒▀▀▄
-        ░░░▐░░░░▐▄▒▒▒▒▒▒▒▒▒▒▀▄
-        ░░░░▀▄░░░░▀▄▒▒▒▒▒▒▒▒▒▒▀▄
-        ░░░░░░▀▄▄▄▄▄█▄▄▄▄▄▄▄▄▄▄▄▀▄
-        ░░░░░░░░░░░▌▌▌▌░░░░░
-        ░░░░░░░░░░░▌▌░▌▌░░░░░
-        ░░░░░░░░░▄▄▌▌▄▌▌░░░░░
-    </pre>
-    <ol>
-        Top movies:
-        <li>Нолан - гений</li>
-    </ol>
+        </div>
+    </div>
+    <div class="gray_container">
+        <section id="nolan" class="gray_section section">
+            <ol>
+                Top movies:
+                <li>Нолан - гений</li>
+            </ol>
+        </section>
+    </div>
 </main>
 
-<footer>
-    <div class="bar" id="contacts">
-        <a href="#about">TG</a>
-        <a href="https://github.com/moarcores">GITHUB</a>
-        <a href="https://vk.com/plsnotagain">VK</a>
-    </div>
-</footer>
-
+<div class="container">
+    <footer>
+        <h1>Contacts</h1>
+        <h4 class="post">Want to know more or just chat?</h4>
+        <h4 class="post">You are welcome!</h4>
+        <button class="footer__button">Send message</button>
+        <div class="footet_links">
+            <div class="footer_link">
+                <a href="https://t.me/moarc"><img src="images/telegram.svg" class="footer_link__image"></a>
+            </div>
+            <div class="footer_link">
+                <a href="https://github.com/moarcores"><img src="images/github.svg" class="footer_link__image"></a>
+            </div>
+            <div class="footer_link">
+                <a href="https://www.linkedin.com/in/elnikovss/"><img src="images/linkedin.svg" class="footer_link__image"></a>
+            </div>
+            <div class="footer_link">
+                <a href="#"><img src="images/spotify.svg" class="footer_link__image"></a>
+            </div>
+        </div>
+        <p class="post">Like me on</p>
+        <p class="post">LinkedIn, Instagram, Behance, Dribble</p>
+    </footer>
 </div>
-
 </body>
 </html>
