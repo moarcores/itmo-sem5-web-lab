@@ -1,21 +1,22 @@
-var popup = document.querySelector(".modal");
-var openPopupButton = document.querySelector(".button__open");
-var closePopupButton = popup.querySelector('.button__close')
+function createModal(modal, open, close, show) {
+    var popup = document.querySelector(modal);
+    var openPopupButton = document.querySelector(open);
+    var closePopupButton = popup.querySelector(close)
 
-console.log(popup)
-console.log(openPopupButton)
+    openPopupButton.addEventListener('click', function (evt) {
+        evt.preventDefault();
+        popup.classList.add(show)
+    });
 
-openPopupButton.addEventListener('click', function (evt) {
-    evt.preventDefault();
-    popup.classList.add('modal--show')
-});
+    closePopupButton.addEventListener('click', function (evt) {
+        popup.classList.remove(show);
+    });
 
-closePopupButton.addEventListener('click', function (evt) {
-    popup.classList.remove('modal--show');
-});
+    document.addEventListener('keydown', function (evt) {
+        if (evt.key === "Escape") {
+            popup.classList.remove(show);
+        }
+    });
+}
 
-document.addEventListener('keydown', function (evt) {
-    if (evt.key === "Escape") {
-        popup.classList.remove('modal--show');
-    }
-});
+createModal(".modal", ".button__open", ".button__close", "modal--show")
