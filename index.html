@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <link href="https://fonts.googleapis.com/css2?family=Federant&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/outlines.css"/>
+    <link rel="stylesheet" href="css/style.css"/>
     <meta charset="UTF-8">
     <title>M3306 Ельников Сергей</title>
 </head>
@@ -122,7 +122,8 @@
         <h1>Contacts</h1>
         <h4 class="post">Want to know more or just chat?</h4>
         <h4 class="post">You are welcome!</h4>
-        <h4 class="post"><a class="button__open">click</a></h4>
+        <h4 class="post"><a id="button__contacts__show">fancy modal contacts</a></h4>
+        <h4 class="post"><a id="button__chat__show">chat</a></h4>
         <div class="footer_links">
             <div class="footer_link">
                 <a href="https://t.me/moarc"><img src="images/contacts/telegram.svg" class="footer_link__image"></a>
@@ -138,19 +139,42 @@
                 <a href="#"><img src="images/contacts/spotify.svg" class="footer_link__image"></a>
             </div>
         </div>
-        <div class="modal">
+
+
+        <div class="modal" id="contacts__modal">
             <div class="modal-content">
-                <span class="button__close">&times;</span>
+                <span class="button__close" id="button__contacts__close">&times;</span>
                 <h1>Contacts</h1>
                 <h3>tg: @moarc</h3>
+            </div>
+        </div>
+
+        <div class="modal" id="chat__modal">
+            <div class="modal-content">
+                <span class="button__close" id="button__chat__close">&times;</span>
+                <h2 id="chat__header">Chat</h2>
+
+                <div id="chat__messages_area">
+                    <div class="chat__bot_message">
+                        <div class="chat__nickname">Bot:</div>
+                        <div class="chat__message_text">Q, che haval?</div>
+                    </div>
+                </div>
+
+                <label>
+                    <input type="text" id="chat__input_area">
+                </label>
+                <input type="button" id="chat__button_send" value="Send">
+                <input type="button" id="chat__button_calculate" value="Calculate">
             </div>
         </div>
     </footer>
 </div>
 
-<script src="src/quicksort.js"></script>
-<script src="src/gallery.js"></script>
-<script src="src/show_modal.js"></script>
-<script src="src/tags.js"></script>
+<script src="js/chat.js"></script>
+<script src="js/quicksort.js"></script>
+<script src="js/gallery.js"></script>
+<script src="js/show_modal.js"></script>
+<script src="js/tags.js"></script>
 </body>
 </html>

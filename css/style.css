@@ -227,7 +227,7 @@ footer {
     border-radius: 0.5rem;
 }
 
-.button__open:hover {
+#button__contacts__show:hover {
     border-radius: 30%;
     background-blend-mode: darken;
     background-color: rgba(0,0,0,0.05);
@@ -245,4 +245,45 @@ footer {
 
 .button__close:hover {
     background-color: darkgray;
+}
+
+#chat__messages_area {
+    height: 400px;
+    width: 300px;
+    overflow-y: scroll;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.chat__msg_del{
+    alignment: right;
+}
+
+.chat__nickname {
+    display: inline;
+    font-weight: bold;
+}
+
+.chat__message_text {
+    width: 300px;
+    display: inline;
+}
+
+#chat__header{
+    text-align: center;
+}
+
+.chat__user_message {
+    flex-direction: row;
+}
+
+.chat__bot_message {
+    flex-direction: row;
+}
+
+#button__chat__show:hover {
+    border-radius: 30%;
+    background-blend-mode: darken;
+    background-color: rgba(0,0,0,0.05);
 }
